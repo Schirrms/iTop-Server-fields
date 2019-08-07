@@ -5,11 +5,11 @@
 	<classes>
 		<class id="PhysicalDevice" _delta="must_exist">
 			<fields>
-			<field id="modelnumber" xsi:type="AttributeString" _delta="define">
-				<sql>modelnumber</sql>
-				<default_value/>
-				<is_null_allowed>true</is_null_allowed>
-			</field>
+				<field id="modelnumber" xsi:type="AttributeString" _delta="define">
+					<sql>modelnumber</sql>
+					<default_value/>
+					<is_null_allowed>true</is_null_allowed>
+				</field>
 			</fields>
 			<presentation>
 				<details>
@@ -19,7 +19,7 @@
 						</item>
 					</items>
 				</details>
-				<list>	
+				<list>
 					<items>
 						<item id="modelnumber" _delta="define">
 							<rank>65</rank>
@@ -28,19 +28,19 @@
 				</list>
 			</presentation>
 		</class>
-	<class id="Server" delta="must_exist">
-		<fields>
-			<field id="S_UUID" xsi:type="AttributeString" _delta="define">
-				<sql>S_UUID</sql>
-				<default_value/>
-				<is_null_allowed>true</is_null_allowed>
-			</field>
-			<field id="S_Function" xsi:type="AttributeString" _delta="define">
-				<sql>S_Function</sql>
-				<default_value/>
-				<is_null_allowed>true</is_null_allowed>
-			</field>
-		</fields>
+		<class id="Server" delta="must_exist">
+			<fields>
+				<field id="S_UUID" xsi:type="AttributeString" _delta="define">
+					<sql>S_UUID</sql>
+					<default_value/>
+					<is_null_allowed>true</is_null_allowed>
+				</field>
+				<field id="S_Function" xsi:type="AttributeString" _delta="define">
+					<sql>S_Function</sql>
+					<default_value/>
+					<is_null_allowed>true</is_null_allowed>
+				</field>
+			</fields>
 			<methods>
 				<method id="DisplayBareRelations" _delta="define">
 					<static>false</static>
@@ -62,10 +62,10 @@
 	}]]></code>
 				</method>
 			</methods>
-		<presentation>
-			<details>
-				<items>
-					<item id="col:col1">
+			<presentation>
+				<details>
+					<items>
+						<item id="col:col1">
 							<items>
 								<item id="fieldset:Server:moreinfo">
 									<items>
@@ -76,22 +76,22 @@
 								</item>
 							</items>
 						</item>
-					<item id="col:col2">
-						<items>
-							<item id="fieldset:Server:otherinfo">
-								<items>
-									<item id="S_UUID" _delta="define">
-										<rank>40</rank>
-									</item>
-									<item id="S_Function" _delta="define">
-										<rank>50</rank>
-									</item>
-								</items>
-							</item>
-						</items>
-					</item>
-				</items>
-			</details>
+						<item id="col:col2">
+							<items>
+								<item id="fieldset:Server:otherinfo">
+									<items>
+										<item id="S_UUID" _delta="define">
+											<rank>40</rank>
+										</item>
+										<item id="S_Function" _delta="define">
+											<rank>50</rank>
+										</item>
+									</items>
+								</item>
+							</items>
+						</item>
+					</items>
+				</details>
 				<search>
 					<items>
 						<item id="modelnumber" _delta="define">
@@ -112,13 +112,13 @@
 						</item>
 					</items>
 				</list>
-		</presentation>
-	 </class>
-</classes>
-<user_rights>
-	<groups>
-	</groups>
-	<profiles>
-	</profiles>
-</user_rights>
+			</presentation>
+		</class>
+	</classes>
+	<user_rights>
+		<groups>
+		</groups>
+		<profiles>
+		</profiles>
+	</user_rights>
 </itop_design>
