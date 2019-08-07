@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.5">
+	<constants>
+	</constants>
+	<classes>
+		<class id="PhysicalDevice" _delta="must_exist">
+			<fields>
+			<field id="modelnumber" xsi:type="AttributeString" _delta="define">
+				<sql>modelnumber</sql>
+				<default_value/>
+				<is_null_allowed>true</is_null_allowed>
+			</field>
+			</fields>
+			<presentation>
+				<details>
+					<items>
+						<item id="modelnumber" _delta="define">
+							<rank>65</rank>
+						</item>
+					</items>
+				</details>
+				<list>	
+					<items>
+						<item id="modelnumber" _delta="define">
+							<rank>65</rank>
+						</item>
+					</items>
+				</list>
+			</presentation>
+		</class>
+	<class id="Server" delta="must_exist">
+		<fields>
+			<field id="S_UUID" xsi:type="AttributeString" _delta="define">
+				<sql>S_UUID</sql>
+				<default_value/>
+				<is_null_allowed>true</is_null_allowed>
+			</field>
+			<field id="S_Function" xsi:type="AttributeString" _delta="define">
+				<sql>S_Function</sql>
+				<default_value/>
+				<is_null_allowed>true</is_null_allowed>
+			</field>
+		</fields>
+			<methods>
+				<method id="DisplayBareRelations" _delta="define">
+					<static>false</static>
+					<access>public</access>
+					<type>Overload-cmdbAbstractObject</type>
+					<code><![CDATA[ function DisplayBareProperties(WebPage $oPage, $bEditMode = false, $sPrefix = '', $aExtraParams = array())
+	{
+		$aFieldsMap = parent::DisplayBareProperties($oPage, $bEditMode, $sPrefix, $aExtraParams);
+
+		if (!$bEditMode)
+		{
+		$oPage->add('<fieldset>');
+		$oPage->add('<legend>'.Dict::S('Class:Document:PreviewTab').'</legend>');
+		$oPage->add('Test PS');
+		$oPage->add('</fieldset>');
+ 			//$oPage->Display($oPage, 'managementip', 'Test PS');
+		}
+		return $aFieldsMap;
+	}]]></code>
+				</method>
+			</methods>
+		<presentation>
+			<details>
+				<items>
+					<item id="col:col1">
+							<items>
+								<item id="fieldset:Server:moreinfo">
+									<items>
+										<item id="modelnumber" _delta="define">
+											<rank>85</rank>
+										</item>
+									</items>
+								</item>
+							</items>
+						</item>
+					<item id="col:col2">
+						<items>
+							<item id="fieldset:Server:otherinfo">
+								<items>
+									<item id="S_UUID" _delta="define">
+										<rank>40</rank>
+									</item>
+									<item id="S_Function" _delta="define">
+										<rank>50</rank>
+									</item>
+								</items>
+							</item>
+						</items>
+					</item>
+				</items>
+			</details>
+				<search>
+					<items>
+						<item id="modelnumber" _delta="define">
+							<rank>75</rank>
+						</item>
+						<item id="S_Function" _delta="define">
+							<rank>150</rank>
+						</item>
+					</items>
+				</search>
+				<list>
+					<items>
+						<item id="modelnumber" _delta="define">
+							<rank>75</rank>
+						</item>
+						<item id="S_Function" _delta="define">
+							<rank>150</rank>
+						</item>
+					</items>
+				</list>
+		</presentation>
+	 </class>
+</classes>
+<user_rights>
+	<groups>
+	</groups>
+	<profiles>
+	</profiles>
+</user_rights>
+</itop_design>
