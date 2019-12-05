@@ -12,5 +12,7 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:Server/Attribute:modelnumber' => 'System Model Number',
 	'Class:Server/Attribute:S_UUID' => 'Server UUID',
 	'Class:Server/Attribute:S_Function' => 'Function of the Server',
+	'Server:Operational' => 'Operational Informations',
+	'Class:Server/Attribute:S_LastBootDate' => 'Last Boot Date',
 ));
 ?>
