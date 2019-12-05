@@ -12,6 +12,7 @@ Dict::Add('FR FR', 'French', 'Français', array(
 	'Class:Server/Attribute:modelnumber' => 'Numéro de Modèle',
 	'Class:Server/Attribute:S_UUID' => 'UUID du serveur',
 	'Class:Server/Attribute:S_Function' => 'Fonction du serveur',
+	'Class:Server/Attribute:netbackup_version' => 'Version Veritas NetBackup',
 	'Server:Operational' => 'Informations opérationnelles',
 	'Class:Server/Attribute:S_LastBootDate' => 'Date du dernier démarrage',
 ));

@@ -46,6 +46,11 @@
 					<default_value></default_value>
 					<is_null_allowed>true</is_null_allowed>
 				</field>
+				<field id="netbackup_version" xsi:type="AttributeString" _delta="define">
+					<sql>netbackup_version</sql>
+					<default_value></default_value>
+					<is_null_allowed>true</is_null_allowed>
+				</field>
 			</fields>
 			<methods>
 				<method id="DisplayBareRelations" _delta="define">
@@ -92,6 +97,9 @@
 										<item id="S_Function" _delta="define">
 											<rank>50</rank>
 										</item>
+										<item id="netbackup_version" _delta="define">
+											<rank>150</rank>
+										</item>
 									</items>
 								</item>
 								<item id="fieldset:Server:Operational">
@@ -114,6 +122,9 @@
 						<item id="S_Function" _delta="define">
 							<rank>150</rank>
 						</item>
+						<item id="netbackup_version" _delta="define">
+							<rank>160</rank>
+						</item>
 					</items>
 				</search>
 				<list>
@@ -123,6 +134,9 @@
 						</item>
 						<item id="S_Function" _delta="define">
 							<rank>150</rank>
+						</item>
+						<item id="netbackup_version" _delta="define">
+							<rank>160</rank>
 						</item>
 					</items>
 				</list>
