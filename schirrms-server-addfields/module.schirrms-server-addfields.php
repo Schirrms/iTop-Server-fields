@@ -5,7 +5,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'schirrms-server-addfields/1.1.4',
+	'schirrms-server-addfields/1.1.5',
 	array(
 		// Identification
 		//
@@ -15,7 +15,8 @@ SetupWebPage::AddModule(
 		// Setup
 		//
 		'dependencies' => array(
-			'itop-config-mgmt/2.5.0'
+			'itop-config-mgmt/2.5.0',
+			'schirrms-generic-connection/0.7.3'
 		),
 		'mandatory' => false,
 		'visible' => true,

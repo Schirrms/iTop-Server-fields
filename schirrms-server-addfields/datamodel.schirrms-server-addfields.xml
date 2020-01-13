@@ -28,6 +28,25 @@
 				</list>
 			</presentation>
 		</class>
+		<class id="GenericCommDevice" _delta="must_exist">
+			<presentation>
+				<details>
+					<items>
+						<item id="col:col1">
+							<items>
+								<item id="fieldset:Server:moreinfo">
+									<items>
+										<item id="modelnumber" _delta="define">
+											<rank>68</rank>
+										</item>
+									</items>
+								</item>
+							</items>
+						</item>
+					</items>
+				</details>
+			</presentation>
+		</class>
 		<class id="Server" delta="must_exist">
 			<fields>
 				<field id="S_UUID" xsi:type="AttributeString" _delta="define">
